@@ -26,4 +26,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)touchCardButton:(UIButton *)sender {
+    if ([sender.currentTitle length]){
+        
+        [sender setBackgroundImage:[UIImage imageNamed:@"card_back"]
+                                              forState:UIControlStateNormal];
+        [sender setTitle:@"" forState:UIControlStateNormal];
+    } else {
+        [sender setBackgroundImage:[UIImage imageNamed:@"card_front"]
+                          forState:UIControlStateNormal];
+        [sender setTitle:@"A♣︎" forState:UIControlStateNormal];
+    }
+}
+
 @end
