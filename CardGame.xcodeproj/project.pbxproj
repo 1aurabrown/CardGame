@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E62A83171889CF7600377546 /* CardGameCardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = E62A83161889CF7600377546 /* CardGameCardMatchingGame.m */; };
 		E62B313318849FBF00570656 /* CardGameCard.m in Sources */ = {isa = PBXBuildFile; fileRef = E62B312C18849FBF00570656 /* CardGameCard.m */; };
 		E62B313418849FBF00570656 /* CardGameDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = E62B312E18849FBF00570656 /* CardGameDeck.m */; };
 		E62B313518849FBF00570656 /* CardGamePlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = E62B313018849FBF00570656 /* CardGamePlayingCard.m */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E62A83151889CF7600377546 /* CardGameCardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardGameCardMatchingGame.h; sourceTree = "<group>"; };
+		E62A83161889CF7600377546 /* CardGameCardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardGameCardMatchingGame.m; sourceTree = "<group>"; };
 		E62B312B18849FBF00570656 /* CardGameCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardGameCard.h; sourceTree = "<group>"; };
 		E62B312C18849FBF00570656 /* CardGameCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardGameCard.m; sourceTree = "<group>"; };
 		E62B312D18849FBF00570656 /* CardGameDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardGameDeck.h; sourceTree = "<group>"; };
@@ -137,6 +140,8 @@
 				E6CC41A11884862F005CF0AF /* Main.storyboard */,
 				E6CC41A41884862F005CF0AF /* CardGameViewController.h */,
 				E6CC41A51884862F005CF0AF /* CardGameViewController.m */,
+				E62A83151889CF7600377546 /* CardGameCardMatchingGame.h */,
+				E62A83161889CF7600377546 /* CardGameCardMatchingGame.m */,
 				E6CC41A71884862F005CF0AF /* Images.xcassets */,
 				E6CC41961884862F005CF0AF /* Supporting Files */,
 			);
@@ -270,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E62A83171889CF7600377546 /* CardGameCardMatchingGame.m in Sources */,
 				E6CC41A01884862F005CF0AF /* CardGameAppDelegate.m in Sources */,
 				E62B313618849FBF00570656 /* CardGamePlayingCardDeck.m in Sources */,
 				E6CC41A61884862F005CF0AF /* CardGameViewController.m in Sources */,
