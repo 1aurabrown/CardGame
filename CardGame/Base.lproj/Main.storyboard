@@ -160,10 +160,28 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4Ns-l8-7Yz"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnq-oi-djC">
+                                <rect key="frame" x="20" y="439" width="110" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="031-iL-F5C">
+                                <rect key="frame" x="224" y="430" width="76" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="New Game">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetGame:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dHf-Js-TeA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.25098040699958801" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
+                        <outlet property="scoreLabel" destination="qnq-oi-djC" id="wPS-pd-0zG"/>
                         <outletCollection property="cardButtons" destination="5fh-vS-Wzy" id="Y2J-V7-YOR"/>
                         <outletCollection property="cardButtons" destination="Qeh-LD-Z60" id="tdM-Qy-360"/>
                         <outletCollection property="cardButtons" destination="EE3-cx-D8A" id="jBk-kk-87z"/>
@@ -185,6 +203,7 @@
     <resources>
         <image name="card_back" width="185" height="242"/>
     </resources>
+    <color key="tintColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

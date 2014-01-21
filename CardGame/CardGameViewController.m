@@ -14,6 +14,7 @@
 @property (nonatomic, strong) CardGameDeck *deck;
 @property (nonatomic, strong) CardGameCardMatchingGame *game;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
+@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @end
 
 @implementation CardGameViewController
@@ -24,23 +25,9 @@
     return _game;
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-
-
 - (CardGameDeck *)createDeck
 {
     return [[CardGamePlayingCardDeck alloc] init];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (IBAction)touchCardButton:(UIButton *)sender {
@@ -49,18 +36,23 @@
     [self updateUI];
 }
 
+- (IBAction)resetGame:(UIButton *)sender {
+    self.game = nil;
+    [self updateUI];
+}
+
 -(void)updateUI
 {
     for (UIButton *cardButton in self.cardButtons) {
         int cardIndex = [self.cardButtons indexOfObject:cardButton];
         CardGameCard *card = [self.game cardAtIndex:cardIndex];
-        NSLog(@"%@", [self backgroundImageForCard:card]);
         [cardButton setTitle:[self titleForCard:card]
                     forState:UIControlStateNormal];
         [cardButton setBackgroundImage:[self backgroundImageForCard:card]
                               forState:UIControlStateNormal];
         cardButton.enabled = !card.isMatched;
     }
+    self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.game.score];
 }
 
 - (NSString *)titleForCard:(CardGameCard *)card

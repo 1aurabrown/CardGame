@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CardGame/CardGameViewController.m"
-            timestampString = "411695159.284575"
+            timestampString = "412038020.781916"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "-updateUI"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CardGame/CardGameViewController.m"
-            timestampString = "411695159.284575"
+            timestampString = "412038020.781916"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "-updateUI"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CardGame/CardGameViewController.m"
-            timestampString = "411695159.284575"
+            timestampString = "412038020.781916"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "-backgroundImageForCard:"
             landmarkType = "5">
          </BreakpointContent>
